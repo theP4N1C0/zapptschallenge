@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.btn {
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    align-items: center;
+    background: transparent;
+    border: 1px solid rgba(112, 112, 112, 1);
+    border-radius: 100px;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    justify-content: space-evenly;
+    height: 45px;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    transition: all ease 0.5s;
+    width: 175px;
+    &:hover {
+        background: rgba(112, 112, 112, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &.btn-primary {
+        background: #808080 0% 0% no-repeat padding-box;
+        color: rgba(255, 255, 255, 1);
+        &:hover {
+            background: darken(#808080, 15%);
+        }
+    }
+
+    &.btn-sm {
+        width: 175px;
+    }
+
+    &.btn-md {
+        width: 263px;
+    }
+
+    &.btn-shadow {
+        border: none;
+        box-shadow: 0px 3px 6px #00000029;
+        color: #000000;
+        &:hover {
+            background: #ffffff;
+            box-shadow: 0px 6px 9px #00000029;
+            color: #000000;
+        }
+    }
+}
+
+.input-group {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 18px;
+
+    &.has-error {
+        label {
+            color: rgb(244, 67, 54);
+        }
+        input {
+            border-bottom: 1px solid rgb(244, 67, 54);
+            color: rgb(244, 67, 54);
+        }
+    }
+
+    label {
+        color: rgba(112, 112, 112, 1);
+        font-family: 'Muli', sans-serif;
+        margin-bottom: 4px;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid #000000;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 38px;
+        padding: 0 20px;
+        transition: border ease 0.5s;
+        width: 90vw;
+        @media screen and (min-width: 768px) {
+            min-width: 433px;
+            width: 100%;
+        }
+        &:focus {
+            border-bottom: 2px solid rgba(169, 197, 186, 1);
+            outline: none;
+        }
+    }
+}

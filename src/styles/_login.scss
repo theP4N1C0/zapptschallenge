@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.login {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100vw;
+    @media screen and (min-width: 1000px) {
+        width: 50vw;
+    }
+
+    > .title {
+        font-size: 1.875rem;
+        font-weight: 400;
+        margin-bottom: 87px;
+    }
+
+    form {
+        align-items: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        max-width: 433px;
+        width: 100%;
+
+        button[type='submit'] {
+            margin-top: 20px;
+        }
+    }
+
+    .forgot-link {
+        align-self: flex-end;
+        color: #808080;
+        margin-bottom: 30px;
+        text-decoration: none;
+        margin-right: 16px;
+        @media screen and (min-width: 768px) {
+            margin-right: 0;
+        }
+        &:hover {
+            color: darken(#808080, 15%);
+        }
+    }
+
+    .separator {
+        color: #808080;
+        font-size: 0.875rem;
+        margin: 40px 0;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            max-width: 433px;
+        }
+
+        &:before,
+        &:after {
+            background-color: #808080;
+            content: '';
+            display: inline-block;
+            height: 1px;
+            position: relative;
+            vertical-align: middle;
+            width: 40%;
+            @media screen and (min-width: 768px) {
+                width: 50%;
+            }
+        }
+
+        &:before {
+            right: 0.5em;
+            margin-left: -50%;
+        }
+        &:after {
+            left: 0.5em;
+            margin-right: -50%;
+        }
+    }
+
+    .create-link {
+        color: #808080;
+        font-size: 1rem;
+        margin-top: 40px;
+        text-align: center;
+
+        a {
+            color: rgba(169, 197, 186, 1);
+            &:hover {
+                color: darken(rgba(169, 197, 186, 1), 15%);
+            }
+        }
+    }
+}
+
+.slide-content {
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        width: 50vw;
+    }
+}
