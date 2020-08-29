@@ -1,4 +1,4 @@
-# Frontenf from Zappts Test
+# Frontend from Zappts Test
 
 In this challenge, I make a Sing In and Sing Up page from the Zappts Company, based with the layout proposed. From development I use React JS.
 
